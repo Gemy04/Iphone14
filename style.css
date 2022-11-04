@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+#imgrad {
+    border-radius: 0vh 0vh 5vh 5vh;
+}
+
+#home {
+    /* background-image: linear-gradient(black, rgba(57, 20, 116, 255), rgba(157, 48, 202, 255), black); */
+    background-image: linear-gradient(black, rgb(48, 13, 61), rgb(48, 13, 61), black);
+    border-radius: 0px 0px 30px 30px;
+
+}
+
+#bthov .whats {
+    text-align: center;
+    /* background-color: black; */
+    position: relative;
+    /* color: white; */
+    padding-top: 10vh;
+
+}
+
+.content {
+    /* background-color: black; */
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 1vh 5vh;
+}
+
+.content .car h3 {
+    text-align: center;
+}
+
+.content .car .smlo {
+    width: 60%;
+    margin: auto;
+    display: block;
+    padding-top: 2vh;
+
+}
+
+.car {
+    display: flex;
+    /* border: red solid 2px; */
+    width: 25%;
+    /* box-shadow: 5px 5px 20px black; */
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1vh;
+}
+
+.car:hover {
+    /* color: white; */
+    /* background-color:rgb(48, 13, 61); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* 
+.car:hover {
+    flex: 20vh;
+}
+
+.content .car .hidep {
+    display: none;
+}
+
+.content .car img:hover+.hidep {
+    display: flex;
+}
+
+
+
+
+.content .car:hover+p {
+    display: flex;
+
+} */
+
+.car p {
+    text-align: center;
+    padding: 3vh;
+
+}
+
+.car img {
+    width: 100%;
+}
+
+nav a {
+    color: grey;
+
+}
+
+nav a:hover {
+    color: white;
+}
+
+.cont a {
+    color: grey;
+}
+
+.cont a:hover {
+    color: white;
+}
+
+
+.tpaa {
+    width: 98%;
+    margin-top: 6vh;
+    margin: auto;
+    border-radius: 3vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+
+}
+
+
+.lensr {
+    margin-top: 4vh;
+}
+
+.three {
+    /* background-color: black; */
+    /* color: white; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.three .para {
+    width: 50%;
+    text-align: center;
+}
+
+.piko {
+    border-radius: 5vh;
+}
+
+.three .pho {
+    width: 20%;
+}
+
+.three .pho img {
+    width: 100%;
+}
+
+.three .heroim img {
+    display: none;
+}
+
+#tree {
+    animation: slide-top 0.70s;
+}
+
+.pricing {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7vh;
+    background-color: rgb(31, 31, 31);
+    /* margin: 10vh; */
+    border-radius: 3vh;
+    color: white;
+}
+
+
+.pricing button {
+    font-size: larger;
+    padding: 2vh 6vh;
+    background-color: white;
+    border: solid 3px rgb(48, 13, 61);
+    border-radius: 3vh;
+
+}
+
+.pricing button:hover {
+    background-color: rgb(225, 225, 225);
+
+}
+
+
+
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(300px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    body {
+        background-color: rgb(23, 120, 153);
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .content .car {
+        width: 100%;
+        margin: 0vh;
+        box-shadow: none;
+        /* border: solid black 2px; */
+    }
+
+    .content .grfree {
+        background-color: rgb(241, 241, 241);
+    }
+
+
+    .tpaa {
+        width: 90%;
+        margin: auto;
+        background-color: rgb(31, 31, 31);
+        color: white;
+    }
+
+    .tpaa .three {
+        flex-direction: column;
+    }
+
+    .tpaa .three .toshow {
+        width: 80%;
+    }
+
+    .tpaa .three .pho {
+        display: none;
+    }
+
+
+    .tpaa .three .heroim img {
+        display: block;
+        width: 100%;
+    }
+
+    .three .para {
+        width: 90%;
+        padding: 3vh;
+        text-align: center;
+    }
+
+    .pricing {
+        /* width: 100%; */
+        flex-direction: column;
+        text-align: center;
+        padding: 3vh;
+        border-radius: none;
+    }
+
+}
